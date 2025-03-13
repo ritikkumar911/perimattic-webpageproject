@@ -1,0 +1,2959 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Tabbed Section</title>
+
+
+
+     
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="dexstyle.css">
+   
+
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <!-- header-part-start -->
+    <div class="container-fluid" id="wrapper">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars fa" style="color: #ffffff;"></i>
+                    </button>
+                    <a class="navbar-brand" href="#"><img
+                            src="https://perimattic.com/wp-content/uploads/2023/03/perimattc-logo-white.png"
+                            style="width: 120px; height: 22px;"></a>
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">perimattic</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link mx-md-2" href="#">LET'S TALK AI</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mx-md-2" href="#">ABOUT</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mx-md-2" href="#">SERVICES</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mx-md-2" href="#">INDUSTRIES</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mx-md-2" href="#">PORTFOLIO</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mx-md-2" href="#">RESOURCES</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="main-btn mb-4">
+                        <button type="submit" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop">
+                            CONTACT US
+                        </button>
+                    </div>
+                    <!-- Button trigger modal -->
+
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+
+                                    <div class="form-container">
+
+                                        <form id="arrive">
+                                            <div class="mb-4">
+                                                <input type="text" class="form-control" placeholder="Full Name">
+                                            </div>
+                                            <div class="mb-4">
+                                                <input type="email" class="form-control" placeholder="E-mail ID*">
+                                            </div>
+                                            <div class="mb-4">
+                                                <input type="text" class="form-control" placeholder="Contact Number">
+                                            </div>
+                                            <div class="mb-4">
+                                                <select class="form-select">
+                                                    <option selected>Select a Budget Range</option>
+                                                    <option value="1">$500 - $1000</option>
+                                                    <option value="2">$1000 - $5000</option>
+                                                    <option value="3">$5000 - $10,000</option>
+                                                </select>
+                                            </div>
+                                            <div class="mb-4">
+                                                <textarea class="form-control"
+                                                    placeholder="Project Description*"></textarea>
+                                            </div>
+                                            <div class="mb-4 form-check">
+                                                <input type="checkbox" class="form-check-input" id="nda">
+                                                <label class="form-check-label" for="nda">Include Copy of a
+                                                    Non-Disclosure Agreement</label>
+                                            </div>
+                                            <div class="mb-4 d-flex align-items-center">
+                                                <p class="mb-0 me-2">5 + 5 =</p>
+                                                <input type="text" class="form-control" style="width: 50px;">
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Request Proposal</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="container" id="F1">
+            <div class="row">
+                <div class="col-md-7">
+                    <hr style="color: white; width: 65px; height: 0%; ">
+                    <h1 class="hcs">custom software</h1>
+                    <h6 class="dvs">Development services</h6>
+                    <p>Elevate your business with robust custom software services,<br>
+                        designed to unleash innovation and drive unparalleled growth </p>
+                    <button class="btn btn-primary mt-3 px-3 py-3" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop" type="submit">CONSULT OUR EXPERTS</button>
+                    <!-- Button trigger modal -->
+
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+
+                                    <div class="form-container">
+
+                                        <form id="arrive">
+                                            <div class="mb-4">
+                                                <input type="text" class="form-control" placeholder="Full Name">
+                                            </div>
+                                            <div class="mb-4">
+                                                <input type="email" class="form-control" placeholder="E-mail ID*">
+                                            </div>
+                                            <div class="mb-4">
+                                                <input type="text" class="form-control" placeholder="Contact Number">
+                                            </div>
+                                            <div class="mb-4">
+                                                <select class="form-select">
+                                                    <option selected>Select a Budget Range</option>
+                                                    <option value="1">$500 - $1000</option>
+                                                    <option value="2">$1000 - $5000</option>
+                                                    <option value="3">$5000 - $10,000</option>
+                                                </select>
+                                            </div>
+                                            <div class="mb-4">
+                                                <textarea class="form-control"
+                                                    placeholder="Project Description*"></textarea>
+                                            </div>
+                                            <div class="mb-4 form-check">
+                                                <input type="checkbox" class="form-check-input" id="nda">
+                                                <label class="form-check-label" for="nda">Include Copy of a
+                                                    Non-Disclosure Agreement</label>
+                                            </div>
+                                            <div class="mb-4 d-flex align-items-center">
+                                                <p class="mb-0 me-2">5 + 5 =</p>
+                                                <input type="text" class="form-control" style="width: 50px;">
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Request Proposal</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-group d-flex">
+                        <div class="award1">
+                            <img class="aw1 img-fluid" src="images/detloitte.webp" alt="">
+                        </div>
+                        <div class="award2">
+                            <img class="aw2 img-fluid" src="images/etimage.webp" alt="">
+                        </div>
+                        <img class="aw3 img-fluid" src="images/buisneessawards.webp" alt="">
+                    </div>
+
+                </div>
+                <div class="col-md-5 ">
+                    <form class="row g-3  needs-validation">
+                        <div class="form-header text-center pt-2 mt-0">
+                            <h6>Share Your Requirements</h6>
+                            <p>To help our experts understand your business objectives and</br>
+                                create your customized plan.</p>
+                        </div>
+                        <div class="row g-2 px-4 py-3 mt-0 pt-0">
+                            <div class="col-6 text-start">
+                                <label for="fullName" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="fullName" placeholder="Full Name" required>
+                            </div>
+                            <div class="col-6  text-start">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" placeholder="Email Address"
+                                    required>
+                            </div>
+                            <div class="col-6 text-start">
+
+                                <input type="text" class="form-control" id="skypeId" placeholder="Skype ID" required>
+                            </div>
+                            <div class="col-6 text-start">
+
+                                <input type="tel" class="form-control" id="contactNumber" placeholder="Contact Number"
+                                    required>
+                            </div>
+                            <div class="col-md-12 text-start">
+
+                                <select class="form-select" id="budgetRange" required>
+                                    <option selected value="" id="sbr">Select a Budget Range</option>
+                                    <option>Below $1,000</option>
+                                    <option>$1,000 - $5,000</option>
+                                    <option>$5,000 - $10,000</option>
+                                    <option>Above $10,000</option>
+                                </select>
+                            </div>
+                            <div class="col-md-12 text-start ">
+
+                                <textarea class="form-control" id="requirement" rows="3"
+                                    placeholder="Describe your requirements" required></textarea>
+                            </div>
+                            <div class="col-3 text-start">
+                                <label for="mathQuestion" class="form-label mt-1">3 + 1 = ?*</label>
+                            </div>
+                            <div class="col-3 text-start">
+                                <input type="text" class="form-control" id="mathQuestion" placeholder="" required>
+                            </div>
+                            <div class="col-6">
+                                <button class="btn btn-primary p-2" type="submit">Get Started</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- header-part-end -->
+
+    <!-- image-part start here -->
+
+    <div class="container text-center py-4" id="IMG-BOX">
+
+        <p class="mb-3" id="img-data">Trusted by conglomerates, enterprises, and startups alike</p>
+
+
+        <!-- Desktop View (Flexbox) -->
+        <!-- Desktop View (Flexbox) -->
+
+        <div class="d-none d-md-flex justify-content-between align-items-center trusted-by" id="IMG">
+            <img src="images/kfc.webp" alt="KFC">
+            <img src="images/kpmg.webp" alt="KPMG">
+            <img src="images/google.webp" alt="Google">
+            <img src="images/dominos.webp" alt="Domino's">
+            <img src="images/bcg.webp" alt="BCG">
+            <img src="images/americana.webp" alt="Americana">
+        </div>
+
+        <!-- Mobile View (Swiper) -->
+        <div class="d-md-none">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/kfc.webp" width="80px" ; height="35px" alt="KFC"></div>
+                    <div class="swiper-slide"><img src="images/kpmg.webp" width="80px" ; height="35px" alt="KPMG"></div>
+                    <div class="swiper-slide"><img src="images/google.webp" width="80px" ; height="35px" alt="Google">
+                    </div>
+                    <div class="swiper-slide"><img src="images/dominos.webp" width="80px" ; height="35px"
+                            alt="Domino's"></div>
+                    <div class="swiper-slide"><img src="images/bcg.webp" width="80px" ; height="35px" alt="BCG"></div>
+                    <div class="swiper-slide"><img src="images/americana.webp" width="80px" ; height="35px"
+                            alt="Americana"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS & Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3, /* Show exactly 3 images at a time */
+            spaceBetween: 10, /* Small gap */
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+            loop: true
+        });
+    </script>
+    <!-- image-part start here -->
+
+    <div class="container" id="mtp">
+        <div class="container-custom">
+            <!-- Section Heading -->
+            <div class="section-heading">
+                <h2>Comprehensive Suite of Custom Software<br>
+                    Development Services</h2>
+                <p>Our custom software development process revolves around a hyper-focused approach that prioritizes the
+                    tailoring of user<br>
+                    experiences and the creation of highly efficient solutions. With our service offerings, we guarantee
+                    a transparent and trusted<br>
+                    partnership that guarantees delivery of impactful and innovative software development solutions..
+                </p>
+            </div>
+
+            <div class="tab-container d-flex">
+                <!-- Left Side Tabs -->
+                <ul class="nav nav-tabs flex-column" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="tab1" data-bs-toggle="tab" data-bs-target="#content1"
+                            type="button" role="tab">
+                            01. Software Consulting Services
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="tab2" data-bs-toggle="tab" data-bs-target="#content2" type="button"
+                            role="tab">
+                            02. Custom Software Development
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="tab3" data-bs-toggle="tab" data-bs-target="#content3" type="button"
+                            role="tab">
+                            03. Enterprise Software Development
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="tab4" data-bs-toggle="tab" data-bs-target="#content4" type="button"
+                            role="tab">
+                            04. Software Product Development
+                        </button>
+                    </li>
+                </ul>
+
+                <!-- Right Side Content -->
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="content1" role="tabpanel">
+                        <img src="images/softwareconsultancyservicesicon.webp" width="55px" height="54px" alt="">
+                        <h3>Software Consulting Services</h3>
+                        <p>As one of the most sought-after custom software consulting companies, we analyze your
+                            business needs, conceptualize software structures, and help you get the best value from its
+                            development.</p>
+                    </div>
+                    <div class="tab-pane fade" id="content2" role="tabpanel">
+                        <img src="images/softwareconsultancyservicesicon.webp" width="55px" height="54px" alt="">
+                        <h3>Custom Software Development</h3>
+                        <p>We build custom software tailored to your specific business needs, ensuring optimal
+                            performance, efficiency, and seamless integration with your existing processes.</p>
+                    </div>
+                    <div class="tab-pane fade" id="content3" role="tabpanel">
+                        <img src="images/softwareconsultancyservicesicon.webp" width="55px" height="54px" alt="">
+                        <h3>Enterprise Software Development</h3>
+                        <p>Our enterprise software solutions help large-scale organizations improve workflows, optimize
+                            resource management, and achieve digital transformation.</p>
+                    </div>
+                    <div class="tab-pane fade" id="content4" role="tabpanel">
+                        <img src="images/softwareconsultancyservicesicon.webp" width="55px" height="54px" alt="">
+                        <h3>Software Product Development</h3>
+                        <p>From ideation to deployment, our software product development services ensure high-quality,
+                            scalable, and market-ready software solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- for show on mobile screen part -->
+    <div id="mtm">
+
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item mb-4">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Software Consulting Services
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body"> As one of the most sought-after
+                        custom software
+                        consulting companies
+                        , we analyze your business needs,
+                        conceptualize software structure, and help you get the
+                        best value from its development. Our dedicated team of
+                        experts leverages its technical prowess to deliver
+                        tailored software solutions that drive efficiency and
+                        productivity.</div>
+                </div>
+            </div>
+            <div class="accordion-item mb-4">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Custom Software Development Services
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body"> As one of the most sought-after
+                        custom software
+                        consulting companies
+                        , we analyze your business needs,
+                        conceptualize software structure, and help you get the
+                        best value from its development. Our dedicated team of
+                        experts leverages its technical prowess to deliver
+                        tailored software solutions that drive efficiency and
+                        productivity.</div>
+                </div>
+            </div>
+            <div class="accordion-item mb-4">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Enterprise Software Development
+                        Services
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body"> As one of the most sought-after
+                        custom software
+                        consulting companies
+                        , we analyze your business needs,
+                        conceptualize software structure, and help you get the
+                        best value from its development. Our dedicated team of
+                        experts leverages its technical prowess to deliver
+                        tailored software solutions that drive efficiency and
+                        productivity.</div>
+                </div>
+            </div>
+            <div class="accordion-item mb-4">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                        Software Product Development
+                        Services
+                    </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body"> As one of the most sought-after
+                        custom software
+                        consulting companies
+                        , we analyze your business needs,
+                        conceptualize software structure, and help you get the
+                        best value from its development. Our dedicated team of
+                        experts leverages its technical prowess to deliver
+                        tailored software solutions that drive efficiency and
+                        productivity.</div>
+                </div>
+            </div>
+
+            <div class="accordion-item mb-4">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                        Software Integration Services
+                    </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body"> As one of the most sought-after
+                        custom software
+                        consulting companies
+                        , we analyze your business needs,
+                        conceptualize software structure, and help you get the
+                        best value from its development. Our dedicated team of
+                        experts leverages its technical prowess to deliver
+                        tailored software solutions that drive efficiency and
+                        productivity..</div>
+                </div>
+            </div>
+            <div class="accordion-item mb-4">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                        Custom CRM Development
+                        Services
+                    </button>
+                </h2>
+                <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body"> As one of the most sought-after
+                        custom software
+                        consulting companies
+                        , we analyze your business needs,
+                        conceptualize software structure, and help you get the
+                        best value from its development. Our dedicated team of
+                        experts leverages its technical prowess to deliver
+                        tailored software solutions that drive efficiency and
+                        productivity.</div>
+                </div>
+            </div>
+            <div class="accordion-item mb-2">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                        API Development Services
+                    </button>
+                </h2>
+                <div id="flush-collapseSeven" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body"> As one of the most sought-after
+                        custom software
+                        consulting companies
+                        , we analyze your business needs,
+                        conceptualize software structure, and help you get the
+                        best value from its development. Our dedicated team of
+                        experts leverages its technical prowess to deliver
+                        tailored software solutions that drive efficiency and
+                        productivity.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- for mobile end here -->
+    <!-- counter start here -->
+    <div class="container">
+        <div class="counter-section row text-center">
+            <div class="col-md-3 col-6 counter-box">
+                <div class="counter" data-target="9">0</div>
+                <hr>
+                <div class="label">Years in Custom Software Development</div>
+            </div>
+            <div class="col-md-3 col-6 counter-box">
+                <div class="counter" data-target="3000">0</div>
+                <hr>
+                <div class="label">Software Projects<br> Delivered</div>
+            </div>
+            <div class="col-md-3 col-6 counter-box">
+                <div class="counter" data-target="1600">0</div>
+                <hr>
+                <div class="label">Certified Technology<br> Professionals</div>
+            </div>
+            <div class="col-md-3 col-6 counter-box">
+                <div class="counter" data-target="98">0</div>
+                <hr>
+                <div class="label">Client Retention Rate performance</div>
+            </div>
+            <div class="col-12 mt-3">
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Schedule
+                    Consultation Call</button>
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+
+                                <div class="form-container">
+
+                                    <form id="arrive">
+                                        <div class="mb-4">
+                                            <input type="text" class="form-control" placeholder="Full Name">
+                                        </div>
+                                        <div class="mb-4">
+                                            <input type="email" class="form-control" placeholder="E-mail ID*">
+                                        </div>
+                                        <div class="mb-4">
+                                            <input type="text" class="form-control" placeholder="Contact Number">
+                                        </div>
+                                        <div class="mb-4">
+                                            <select class="form-select">
+                                                <option selected>Select a Budget Range</option>
+                                                <option value="1">$500 - $1000</option>
+                                                <option value="2">$1000 - $5000</option>
+                                                <option value="3">$5000 - $10,000</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-4">
+                                            <textarea class="form-control"
+                                                placeholder="Project Description*"></textarea>
+                                        </div>
+                                        <div class="mb-4 form-check">
+                                            <input type="checkbox" class="form-check-input" id="nda">
+                                            <label class="form-check-label" for="nda">Include Copy of a Non-Disclosure
+                                                Agreement</label>
+                                        </div>
+                                        <div class="mb-4 d-flex align-items-center">
+                                            <p class="mb-0 me-2">5 + 5 =</p>
+                                            <input type="text" class="form-control" style="width: 50px;">
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Request Proposal</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- counter end here -->
+
+    <!-- accordion part code start here -->
+    <section id="accord1">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-6 header-column">
+                    <div class="header-content">
+                        <h2>Proven Capabilities to Build Diverse Industry-Based <br>Software</h2>
+                        <p class="lead">As an industry leader in software application development services, our <br>
+                            dedicated team works around the clock to build custom technology<br>
+                            solutions tailored to your industry and business needs. We focus on <br>
+                            delivering high-quality, scalable, and secure applications that drive <br>
+                            efficiency and innovation. Our expertise spans various industries, <br>
+                            ensuring that we can meet the unique challenges and requirements of<br>
+                            your sector.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 accordion-column">
+                    <div class="accordion" id="uniqueIndustryAccordion">
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFintechUnique">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFintechUnique" aria-expanded="false"
+                                    aria-controls="collapseFintechUnique">
+                                    <i class="fas fa-university me-2"></i> FinTech
+                                </button>
+                            </h2>
+                            <div id="collapseFintechUnique" class="accordion-collapse collapse"
+                                data-bs-parent="#uniqueIndustryAccordion">
+                                <div class="accordion-body">
+                                    <p>As an established <a href="">FinTech software development services</a>
+                                        provider,<br>
+                                        our expert software developers can cater to the FinTech industry's <br>
+                                        security, speed, seamless navigation requirements.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingBankingUnique">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseBankingUnique" aria-expanded="false"
+                                    aria-controls="collapseBankingUnique">
+                                    <i class="fas fa-university me-2"></i> Banking
+                                </button>
+                            </h2>
+                            <div id="collapseBankingUnique" class="accordion-collapse collapse"
+                                data-bs-parent="#uniqueIndustryAccordion">
+                                <div class="accordion-body">
+                                    <p>As an established <a href=""> FinTech Banking </a> provider,
+                                        our expert software developers can cater to the FinTech industry's
+                                        security, speed, seamless navigation requirements.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingInsuranceUnique">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseInsuranceUnique" aria-expanded="false"
+                                    aria-controls="collapseInsuranceUnique">
+                                    <i class="fas fa-shield-alt me-2"></i> Insurance
+                                </button>
+                            </h2>
+                            <div id="collapseInsuranceUnique" class="accordion-collapse collapse"
+                                data-bs-parent="#uniqueIndustryAccordion">
+                                <div class="accordion-body">
+                                    <p>As an established <a href="">FinTech Insurance services</a> provider,
+                                        our expert software developers can cater to the FinTech industry's
+                                        security, speed, seamless navigation requirements.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingLendingUnique">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseLendingUnique" aria-expanded="false"
+                                    aria-controls="collapseLendingUnique">
+                                    <i class="fas fa-hand-holding-usd me-2"></i> Lending
+                                </button>
+                            </h2>
+                            <div id="collapseLendingUnique" class="accordion-collapse collapse"
+                                data-bs-parent="#uniqueIndustryAccordion">
+                                <div class="accordion-body">
+                                    <p>As an established <a href=""> Lending</a> provider,
+                                        our expert software developers can cater to the FinTech industry's
+                                        security, speed, seamless navigation requirements.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingPaymentUnique">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapsePaymentUnique" aria-expanded="false"
+                                    aria-controls="collapsePaymentUnique">
+                                    <i class="fas fa-credit-card me-2"></i> Payment
+                                </button>
+                            </h2>
+                            <div id="collapsePaymentUnique" class="accordion-collapse collapse"
+                                data-bs-parent="#uniqueIndustryAccordion">
+                                <div class="accordion-body">
+                                    <p>As an established <a href=""> Payment</a> provider,
+                                        our expert software developers can cater to the FinTech industry's
+                                        security, speed, seamless navigation requirements.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingEnergyUnique">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseEnergyUnique" aria-expanded="false"
+                                    aria-controls="collapseEnergyUnique">
+                                    <i class="fas fa-bolt me-2"></i> Energy
+                                </button>
+                            </h2>
+                            <div id="collapseEnergyUnique" class="accordion-collapse collapse"
+                                data-bs-parent="#uniqueIndustryAccordion">
+                                <div class="accordion-body">
+                                    <p>As an established <a href=""> Energy</a> provider,
+                                        our expert software developers can cater to the FinTech industry's
+                                        security, speed, seamless navigation requirements.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOilandGasUnique">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOilandGasUnique" aria-expanded="false"
+                                    aria-controls="collapseOilandGasUnique">
+                                    <i class="fas fa-gas-pump me-2"></i> Oil and Gas
+                                </button>
+                            </h2>
+                            <div id="collapseOilandGasUnique" class="accordion-collapse collapse"
+                                data-bs-parent="#uniqueIndustryAccordion">
+                                <div class="accordion-body">
+                                    <p>As an established <a href=""> Oil and Gas</a> provider,
+                                        our expert software developers can cater to the FinTech industry's
+                                        security, speed, seamless navigation requirements.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingEVUnique">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseEVUnique" aria-expanded="false"
+                                    aria-controls="collapseEVUnique">
+                                    <i class="fas fa-charging-station me-2"></i> EV
+                                </button>
+                            </h2>
+                            <div id="collapseEVUnique" class="accordion-collapse collapse"
+                                data-bs-parent="#uniqueIndustryAccordion">
+                                <div class="accordion-body">
+                                    <p>As an established <a href=""> EV</a> provider,
+                                        our expert software developers can cater to the FinTech industry's
+                                        security, speed, seamless navigation requirements.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingHealthcareUnique">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseHealthcareUnique" aria-expanded="false"
+                                    aria-controls="collapseHealthcareUnique">
+                                    <i class="fas fa-shopping-cart me-2"></i> Healthcare
+                                </button>
+                            </h2>
+                            <div id="collapseHealthcareUnique" class="accordion-collapse collapse"
+                                data-bs-parent="#uniqueIndustryAccordion">
+                                <div class="accordion-body">
+                                    <p>As an established <a href=""> Healthcare</a> provider,
+                                        our expert software developers can cater to the FinTech industry's
+                                        security, speed, seamless navigation requirements.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingRetailUnique">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseRetailUnique" aria-expanded="false"
+                                    aria-controls="collapseRetailUnique">
+                                    <i class="fas fa-shopping-cart me-2"></i> Retail
+                                </button>
+                            </h2>
+                            <div id="collapseRetailUnique" class="accordion-collapse collapse"
+                                data-bs-parent="#uniqueIndustryAccordion">
+                                <div class="accordion-body">
+                                    <p>As an established <a href=""> Retail</a> provider,
+                                        our expert software developers can cater to the FinTech industry's
+                                        security, speed, seamless navigation requirements.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingeCommerceUnique">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseeCommerceUnique" aria-expanded="false"
+                                    aria-controls="collapseeCommerceUnique">
+                                    <i class="fas fa-shopping-bag me-2"></i>eCommerce
+                                </button>
+                            </h2>
+                            <div id="collapseeCommerceUnique" class="accordion-collapse collapse"
+                                data-bs-parent="#uniqueIndustryAccordion">
+                                <div class="accordion-body">
+                                    <p>As an established <a href=""> eCommerce</a> provider,
+                                        our expert software developers can cater to the FinTech industry's
+                                        security, speed, seamless navigation requirements.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingManufacturingUnique">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseManufacturingUnique" aria-expanded="false"
+                                    aria-controls="collapseManufacturingUnique">
+                                    <i class="fas fa-industry me-2"></i> Manufacturing
+                                </button>
+                            </h2>
+                            <div id="collapseManufacturingUnique" class="accordion-collapse collapse"
+                                data-bs-parent="#uniqueIndustryAccordion">
+                                <div class="accordion-body">
+                                    <p>As an established <a href=""> Manufacturing</a> provider,
+                                        our expert software developers can cater to the FinTech industry's
+                                        security, speed, seamless navigation requirements.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingConstructionUnique">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseConstructionUnique" aria-expanded="false"
+                                    aria-controls="collapseConstructionUnique">
+                                    <i class="fas fa-hard-hat me-2"></i> Construction
+                                </button>
+                            </h2>
+                            <div id="collapseConstructionUnique" class="accordion-collapse collapse"
+                                data-bs-parent="#uniqueIndustryAccordion">
+                                <div class="accordion-body">
+                                    <p>As an established <a href=""> Construction</a> provider,
+                                        our expert software developers can cater to the FinTech industry's
+                                        security, speed, seamless navigation requirements.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingLogisticsandTransportationUnique">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseLogisticsandTransportationUnique" aria-expanded="false"
+                                    aria-controls="collapseLogisticsandTransportationUnique">
+                                    <i class="fas fa-truck me-2"></i> Logistics and Transportation
+                                </button>
+                            </h2>
+                            <div id="collapseLogisticsandTransportationUnique" class="accordion-collapse collapse"
+                                data-bs-parent="#uniqueIndustryAccordion">
+                                <div class="accordion-body">
+                                    <p>As an established <a href=""> LogisticsandTransportation</a> provider,
+                                        our expert software developers can cater to the FinTech industry's
+                                        security, speed, seamless navigation requirements.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTravelUnique">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTravelUnique" aria-expanded="false"
+                                    aria-controls="collapseTravelUnique">
+                                    <i class="fas fa-plane me-2"></i> Travel
+                                </button>
+                            </h2>
+                            <div id="collapseTravelUnique" class="accordion-collapse collapse"
+                                data-bs-parent="#uniqueIndustryAccordion">
+                                <div class="accordion-body">
+                                    <p>As an established <a href=""> Travel</a> provider,
+                                        our expert software developers can cater to the FinTech industry's
+                                        security, speed, seamless navigation requirements.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingAviationUnique">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseAviationUnique" aria-expanded="false"
+                                    aria-controls="collapseAviationUnique">
+                                    <i class="fas fa-plane-departure me-2"></i> Aviation
+                                </button>
+                            </h2>
+                            <div id="collapseAviationUnique" class="accordion-collapse collapse"
+                                data-bs-parent="#uniqueIndustryAccordion">
+                                <div class="accordion-body">
+                                    <p>As an established <a href=""> Aviation</a> provider,
+                                        our expert software developers can cater to the FinTech industry's
+                                        security, speed, seamless navigation requirements.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingRestaurantUnique">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseRestaurantUnique" aria-expanded="false"
+                                    aria-controls="collapseRestaurantUnique">
+                                    <i class="fas fa-utensils me-2"></i> Restaurant
+                                </button>
+                            </h2>
+                            <div id="collapseRestaurantUnique" class="accordion-collapse collapse"
+                                data-bs-parent="#uniqueIndustryAccordion">
+                                <div class="accordion-body">
+                                    <p>As an established <a href=""> Restaurant</a> provider,
+                                        our expert software developers can cater to the FinTech industry's
+                                        security, speed, seamless navigation requirements.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingGamingUnique">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseGamingUnique" aria-expanded="false"
+                                    aria-controls="collapseGamingUnique">
+                                    <i class="fas fa-gamepad me-2"></i> Gaming
+                                </button>
+                            </h2>
+                            <div id="collapseGamingUnique" class="accordion-collapse collapse"
+                                data-bs-parent="#uniqueIndustryAccordion">
+                                <div class="accordion-body">
+                                    <p>As an established <a href=""> Gaming</a> provider,
+                                        our expert software developers can cater to the FinTech industry's
+                                        security, speed, seamless navigation requirements.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTelecommunicationUnique">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTelecommunicationUnique" aria-expanded="false"
+                                    aria-controls="collapseTelecommunicationUnique">
+                                    <i class="fas fa-satellite-dish me-2"></i></i> Telecommunication
+                                </button>
+                            </h2>
+                            <div id="collapseTelecommunicationUnique" class="accordion-collapse collapse"
+                                data-bs-parent="#uniqueIndustryAccordion">
+                                <div class="accordion-body">
+                                    <p>As an established <a href=""> Telecommunication</a> provider,
+                                        our expert software developers can cater to the FinTech industry's
+                                        security, speed, seamless navigation requirements.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOTTUnique">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOTTUnique" aria-expanded="false"
+                                    aria-controls="collapseOTTUnique">
+                                    <i class="fas fa-tv me-2"></i> OTT
+                                </button>
+                            </h2>
+                            <div id="collapseOTTUnique" class="accordion-collapse collapse"
+                                data-bs-parent="#uniqueIndustryAccordion">
+                                <div class="accordion-body">
+                                    <p>As an established <a href=""> OTT</a> provider,
+                                        our expert software developers can cater to the FinTech industry's
+                                        security, speed, seamless navigation requirements.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingRealEstateUnique">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseRealEstateUnique" aria-expanded="false"
+                                    aria-controls="collapseRealEstateUnique">
+                                    <i class="fas fa-home me-2"></i></i> Real Estate
+                                </button>
+                            </h2>
+                            <div id="collapseRealEstateUnique" class="accordion-collapse collapse"
+                                data-bs-parent="#uniqueIndustryAccordion">
+                                <div class="accordion-body">
+                                    <p>As an established <a href=""> RealEstate</a> provider,
+                                        our expert software developers can cater to the FinTech industry's
+                                        security, speed, seamless navigation requirements.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- accordion part code start here -->
+
+    <section class="assist">
+        <div class="container py-4" id="spd">
+
+            <h2 class="text-start" style="font-size: 38px;">Recognitions Gained for Our Software<br> Development Efforts
+            </h2>
+            <p class="text-start" style="font-size: 17px;">Our commitment to excellence has earned us numerous industry
+                awards and recognitions. These accolades reflect our<br>
+                dedication to delivering innovative, high-quality software solutions that drive real growth and success.
+            </p>
+
+
+            <div id="awardCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                   
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button class="carousel-control-prev" type="button" data-bs-target="#awardCarousel"
+                    data-bs-slide="prev">&gt;</button>
+                <button class="carousel-control-next" type="button" data-bs-target="#awardCarousel"
+                    data-bs-slide="next">&lt;</button>
+            </div>
+
+        </div>
+
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const awards = [
+                    { year: "2020", desc: "App Development Company Of The Year", img: "images/enterprenaus.svg" },
+                    { year: "2024", desc: "Fastest Growing AI Development Companies", img: "images/fastestgrowing.svg" },
+                    { year: "2024", desc: "High-Growth Companies APAC  ", img: "images/high-growth.svg" },
+                    { year: "2023", desc: "Fastest Growing Technology Company", img: "images/detloitte.webp" },
+                    { year: "2022", desc: "App Development Company Of The Year", img: "images/enterprenaus.svg" },
+                    { year: "2023", desc: "Fastest Growing AI Development Companies", img: "images/fastestgrowing.svg" },
+                    { year: "2021", desc: "High-Growth Companies APAC ", img: "images/high-growth.svg" },
+                    { year: "2024", desc: "Fastest Growing Technology Company", img: "images/detloitte.webp  " }
+                ];
+
+                const carouselInner = document.querySelector(".carousel-inner");
+                let isMobile = window.innerWidth < 768;
+
+                function generateSlides() {
+                    carouselInner.innerHTML = "";
+                    let slides = [];
+
+                    if (isMobile) {
+                        awards.forEach((award, index) => {
+                            let slide = `<div class="carousel-item ${index === 0 ? 'active' : ''}">
+                                        <div class="d-flex justify-content-center">
+                                            <div class="award-card">
+                                                <img src="${award.img}" >
+                                                
+                                                <p>${award.year}</p>
+                                                <p>${award.desc}</p>
+                                            </div>
+                                        </div>
+                                    </div>`;
+                            slides.push(slide);
+                        });
+                    } else {
+                        for (let i = 0; i < awards.length; i += 4) {
+                            let slide = `<div class="carousel-item ${i === 0 ? 'active' : ''}">
+                                        <div class="row row-cols-1 row-cols-md-4 g-2">`;
+                            for (let j = i; j < i + 4 && j < awards.length; j++) {
+                                slide += `<div class="col">
+                                        <div class="award-card">
+                                            <img src="${awards[j].img}" alt="${awards[j]}">
+                                           
+                                            <p>${awards[j].year}</p>
+                                            <p>${awards[j].desc}</p>
+                                        </div>
+                                      </div>`;
+                            }
+                            slide += `</div></div>`;
+                            slides.push(slide);
+                        }
+                    }
+                    carouselInner.innerHTML = slides.join("");
+                }
+
+                generateSlides();
+                window.addEventListener("resize", function () {
+                    let newIsMobile = window.innerWidth < 768;
+                    if (newIsMobile !== isMobile) {
+                        isMobile = newIsMobile;
+                        generateSlides();
+                    }
+                });
+            });
+        </script>
+    </section>
+
+
+    <section id="upd-colm">
+        <div class="container">
+            <div class="row">
+                <h2>Factors that Cement Our Credibility as a Custom <br>
+                    Software Development Company </h2>
+                <p>With almost a decade of experience in the industry, we have the expertise to handle software
+                    development projects <br>of diverse complexity levels, making Appinventiv's custom software
+                    development
+                    services the right fit for your <br> <a href="">ITconsulting </a>needs.</p>
+            </div>
+        </div>
+        <div class="container custom-container">
+            <div class="row w-100">
+                <div class="col-sm-12 col-md-6">
+                    <div class="custom-box w-100">
+
+                        <p>001</p>
+                        <div>
+                            <h5>1 Quality Product</h5>
+                            <p>As the best custom software development company in USA,
+                                we first <a href="">build an MVP </a>to test the efficiency of your product.
+                                We ensure the implementation of rigorous testing techniques,
+                                obtain continuous feedback to meet user requirements and
+                                deliver a user-friendly and intuitive software solution.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 mt-md-4">
+                    <div class="custom-box w-100">
+
+                        <p>002</p>
+                        <div>
+                            <h5>2 Agile Software Services</h5>
+                            <p>As an esteemed software solution company, our team, with
+                                its rich expertise and diverse experience, optimizes all processes
+                                and employs the best <a href="">agile practices </a> offering mobile software
+                                development services, leading to a reduction in custom software
+                                application development time by approximately 50%.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="custom-box w-100">
+
+                        <p>003</p>
+                        <div>
+                            <h5>3 Security and Compliance</h5>
+                            <p>As a trusted custom software development company, we
+                                adhere to relevant regulatory compliance and data security
+                                measures. We continually update our security protocols to
+                                counter emerging threats and maintain a secure, compliant
+                                environment tailored to your needs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 mt-md-4">
+                    <div class="custom-box d-flex w-100">
+
+                        <p>004</p>
+                        <div>
+                            <h5>4 Latest Technology Stack</h5>
+                            <p>As a remarkable software development services company, we
+                                utilize a range of advanced technologies and programming
+                                languages for your project that guarantees seamless integration
+                                of processes, from system architecture to frontend and backend
+                                development and post-delivery maintenance.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="custom-box w-100">
+
+                        <p>005</p>
+                        <div>
+                            <h5>5 Complete Transparency</h5>
+                            <p>Transparency is the key to effective business relationships.
+                                As a software development company, we always keep our
+                                clients up to date with the status of their projects and provide
+                                a clear view of every technological decision.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="box-part">
+        <div class="container custom-section">
+            <div class="row g-0 content-box">
+                <div class="col-md-7 text-content text-start">
+                    <h4>Know What Makes Appinventiv Your Ideal Software <br> Development Partner</h4>
+                    <ul>
+                        <li><i class="fa-solid fa-circle-check fa-xl" style="color: #fafafa;"></i>&nbsp;&nbsp;Recognized
+                            excellence by Deloitte, Clutch, Statista, Good Firms,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the
+                            Economic Times etc.</li>
+                        <li><i class="fa-solid fa-circle-check fa-xl" style="color: #fafafa;"></i>&nbsp;&nbsp;Unmatched
+                            expertise in AI, ML, RPA, Computer Vision, NLP, Big
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Data, and Data Science.
+                        </li>
+                        <li><i class="fa-solid fa-circle-check fa-xl" style="color: #fafafa;"></i>&nbsp;&nbsp;Adherence
+                            to FDA, HIPAA, GDPR, and other relevant regulations.</li>
+                        <li><i class="fa-solid fa-circle-check fa-xl" style="color: #fafafa;"></i>&nbsp;&nbsp;Standing
+                            partnerships with Microsoft Azure, Google Cloud, and AWS.</li>
+                    </ul>
+                    <a href="#" class="btn-custom">Discuss Your Project Idea</a>
+                </div>
+                <div class="col-md-5 image-content">
+                    <img src="images/laptop-image.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="itily">
+        <div class="container">
+            <div class="row">
+                <h2 style="font-size: 38px;">Client Success Stories</h2>
+                <p style="font-size: 17px;">Here's a quick glance at some of our most prominent custom software
+                    application development service projects:</p>
+            </div>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1">
+
+                    </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2">
+
+                    </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3">
+
+                    </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                        aria-label="Slide 4">
+
+                    </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                        aria-label="Slide 5">
+
+                    </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                        aria-label="Slide 6">
+
+                    </button>
+                </div>
+
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="cards-wrapper">
+
+                            <div class="container my-5">
+                                <div class="row  g-0 custom-card">
+                                    <div class="col-md-6 card-content">
+                                        <h2>Ility</h2>
+                                        <p>Learn how we developed a white-label SaaS platform for Ility that unlocks new
+                                            growth
+                                            opportunities for the real estate sector.</p>
+                                        <h4>The Results?</h4>
+                                        <p><strong>40%</strong> higher occupancy | <strong>20%</strong> increase in
+                                            landlord
+                                            ROI
+                                        </p>
+                                        <a href="#" class="btn-custom1">Read Case Study</a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img src="https://media.istockphoto.com/id/683962492/photo/sunrise-at-colosseum-rome-italy.jpg?s=2048x2048&w=is&k=20&c=jPMg6ganFwPyBRQ2a7z2TcMikF6kILY1TkKnMRcsUXA="
+                                            alt="Cityscape">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="cards-wrapper">
+                            <div class="container my-5">
+                                <div class="row g-0 custom-card">
+                                    <div class="col-md-6 card-content">
+                                        <h2>IKEA</h2>
+                                        <p>Learn how we developed a white-label SaaS platform for Ility that unlocks new
+                                            growth
+                                            opportunities for the real estate sector.</p>
+                                        <h4>The Results?</h4>
+                                        <p><strong>40%</strong> higher occupancy | <strong>20%</strong> increase in
+                                            landlord
+                                            ROI
+                                        </p>
+                                        <a href="#" class="btn-custom1">Read Case Study</a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img src="https://media.istockphoto.com/id/1970247987/photo/customer-service-management-digital-transformation-technology-strategy-optimize-and-automate.jpg?s=2048x2048&w=is&k=20&c=CiKpxTsn_VrUUoNR5oAiF2-MNBvYwnbT7xWGBsvFMkY="
+                                            alt="Cityscape">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="cards-wrapper">
+                            <div class="container my-5">
+                                <div class="row g-0 custom-card">
+                                    <div class="col-md-6 card-content">
+                                        <h2>KFC</h2>
+                                        <p>Learn how we developed a white-label SaaS platform for Ility that unlocks new
+                                            growth
+                                            opportunities for the real estate sector.</p>
+                                        <h4>The Results?</h4>
+                                        <p><strong>40%</strong> higher occupancy | <strong>20%</strong> increase in
+                                            landlord
+                                            ROI
+                                        </p>
+                                        <a href="#" class="btn-custom1">Read Case Study</a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img src="https://cdn.pixabay.com/photo/2016/08/06/13/40/kfc-1574389_1280.jpg"
+                                            alt="Cityscape">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="cards-wrapper">
+                            <div class="container my-5">
+                                <div class="row g-0 custom-card">
+                                    <div class="col-md-6 card-content">
+                                        <h2>AVATUS</h2>
+                                        <p>Learn how we developed a white-label SaaS platform for Ility that unlocks new
+                                            growth
+                                            opportunities for the real estate sector.</p>
+                                        <h4>The Results?</h4>
+                                        <p><strong>40%</strong> higher occupancy | <strong>20%</strong> increase in
+                                            landlord
+                                            ROI
+                                        </p>
+                                        <a href="#" class="btn-custom1">Read Case Study</a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img src="https://media.istockphoto.com/id/2083966639/photo/businessman-use-laptop-with-virtual-world-economic-growth-chart-with-red-warning-sign-for.jpg?s=2048x2048&w=is&k=20&c=IBsLIgJKcfKlx7hfOmpw5EVBOlIKZwiwOJYX16FPgho="
+                                            alt="Cityscape">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="cards-wrapper">
+                            <div class="container my-5">
+                                <div class="row g-0 custom-card">
+                                    <div class="col-md-6 card-content">
+                                        <h2>JobGet</h2>
+                                        <p>Learn how we developed a white-label SaaS platform for Ility that unlocks new
+                                            growth
+                                            opportunities for the real estate sector.</p>
+                                        <h4>The Results?</h4>
+                                        <p><strong>40%</strong> higher occupancy | <strong>20%</strong> increase in
+                                            landlord
+                                            ROI
+                                        </p>
+                                        <a href="#" class="btn-custom1">Read Case Study</a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img src="https://media.istockphoto.com/id/1044909162/photo/business-man-review-his-resume-application-on-desk-laptop-computer-job-seeker.jpg?s=2048x2048&w=is&k=20&c=7XZkWbDtA5tcNYLKxwmt8iFQrmALQ0lkqtHwkCFNlTU="
+                                            alt="Cityscape">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="cards-wrapper">
+                            <div class="container my-5">
+                                <div class="row g-0 custom-card">
+                                    <div class="col-md-6 card-content">
+                                        <h2>Adidas</h2>
+                                        <p>Learn how we developed a white-label SaaS platform for Ility that unlocks new
+                                            growth
+                                            opportunities for the real estate sector.</p>
+                                        <h4>The Results?</h4>
+                                        <p><strong>40%</strong> higher occupancy | <strong>20%</strong> increase in
+                                            landlord
+                                            ROI
+                                        </p>
+                                        <a href="#" class="btn-custom1">Read Case Study</a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img src="https://media.istockphoto.com/id/1385906320/photo/adidas-store-in-hong-kong.jpg?s=2048x2048&w=is&k=20&c=Esw7s7-fqKvYm3FF0YoPLhdA--gVqcotw9m9VC01MTE="
+                                            alt="Cityscape">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- testimonial parts starts here  -->
+    <section class="sideswipe">
+        <div class="container testimonial-section">
+            <h2 class="testimonial-heading">Testimonials that Prove Our <br> Software Development Expertise</h2>
+            <p class="testimonial-subheading">With over 3,000 businesses served globally and a 95% client retention rate
+                over the past nine years, <br> here is what our clients have to say about our software development
+                services.</p>
+        </div>
+        <div class="container testimonial-container">
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0"
+                        class="active"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="testimonial">
+                            <img src="https://media.istockphoto.com/id/2150988877/photo/professional-man-working-on-laptop-in-modern-office.jpg?s=612x612&w=0&k=20&c=t8oZNAT4t52Ef7HzH9GijoIXBYD4w-0gEe1MLDtC-Ig="
+                                alt="User 1">
+
+                            <div class="testimonial-content">
+                                <h5>Billy Lan</h5>
+                                <p>"Great experience with this team. Highly recommended!"</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dolorem soluta,
+                                    excepturi rerum facilis quasi molestias ea, temporibus similique quia eos nobis
+                                    quibusdam beatae ab vitae blanditiis, deserunt fugit ipsum.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial">
+                            <img src="https://media.istockphoto.com/id/2162237654/photo/photo-of-lovely-attractive-successful-woman-software-developer-armchair-comfortable-workspace.jpg?s=612x612&w=0&k=20&c=5ReZCEo4twoLsRVXxK9Ec6LHIa4EFJV0mzA3nxiKLzc="
+                                alt="User 2">
+                            <div class="testimonial-content">
+                                <h5>Jane Doe</h5>
+                                <p>"Professional service and excellent results. Would hire again!"</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dolorem soluta,
+                                    excepturi rerum facilis quasi molestias ea, temporibus similique quia eos nobis
+                                    quibusdam beatae ab vitae blanditiis, deserunt fugit ipsum.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial">
+                            <img src="https://media.istockphoto.com/id/1344688156/photo/portrait-of-a-man-using-a-computer-in-a-modern-office.jpg?s=612x612&w=0&k=20&c=xQsoWWZXJ1ydmmCGgnHyuVYUc7BILG1FauoHcloDnG4="
+                                alt="User 3">
+                            <div class="testimonial-content">
+                                <h5>John Smith</h5>
+                                <p>"Amazing work! Exceeded my expectations."</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dolorem soluta,
+                                    excepturi rerum facilis quasi molestias ea, temporibus similique quia eos nobis
+                                    quibusdam beatae ab vitae blanditiis, deserunt fugit ipsum.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- testimonial parts ends here -->
+
+    <!-- list part start here -->
+    <section class="shockwave">
+        <div class="conatiner" id="list-lc">
+            <div class="row align-items-center">
+                <h2>We Cover a Wide Range of Software Development</h2>
+                <p>At Appinventiv, we specialize in creating a diverse range of software tailored to meet the unique
+                    needs of your<br>
+                    business across industries.</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Product Management Software
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                            checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            CMS Software
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                            checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            SCM Software
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                            checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            HRM Software
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                            checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Cybersecurity Software
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                            checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            CRM Software
+                        </label>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Inventory Management Software
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                            checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Asset Management Software
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                            checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            SCM Software
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                            checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Dating Platforms
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                            checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Fitness Platforms
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                            checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Job Portals
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                            checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Online Marketplace
+                        </label>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Cab and Rideshare Services Software
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                            checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Food Delivery Platforms
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                            checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Social Networking Solutions
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                            checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Dating Platforms
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                            checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Learning Management Systems
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                            checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Content Creation Systems
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                            checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Wealth Management Systems
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+        <!-- list part end here -->
+
+        <!-- tabs second part start here -->
+        <div class="container compliance-container">
+            <h2 class="text-white">Our Compliance-Friendly Software Adheres <br> the Highest Quality Standards</h2>
+            <p>We specialize in developing custom software that helps you adhere to relevant regulatory compliance and
+                protect yourbusinesses from potential harm and reputational damages. Our cutting-edge software
+                development
+                services tailored to yourunique business needs ensure foolproof adherence to safety, quality, and
+                regulatory requirements, empowering businessesto achieve sustainable growth and operate with
+                confidence.Some common compliances we follow for software development across industries include:</p>
+
+            <div class="compliance-tabs">
+                <div class="nav flex-column compliance-list" id="complianceTabs" role="tablist">
+                    <button class="nav-link active" id="gdpr-tab" data-bs-toggle="pill" data-bs-target="#gdpr"
+                        type="button" role="tab">GDPR</button>
+                    <button class="nav-link" id="ccpa-tab" data-bs-toggle="pill" data-bs-target="#ccpa" type="button"
+                        role="tab">CCPA</button>
+                    <button class="nav-link" id="hipaa-tab" data-bs-toggle="pill" data-bs-target="#hipaa" type="button"
+                        role="tab">HIPAA</button>
+                    <button class="nav-link" id="pci-tab" data-bs-toggle="pill" data-bs-target="#pci" type="button"
+                        role="tab">PCI-DSS</button>
+                    <button class="nav-link" id="soc2-tab" data-bs-toggle="pill" data-bs-target="#soc2" type="button"
+                        role="tab">SOC 2</button>
+                </div>
+                <div class="tab-content compliance-content" id="complianceContent">
+                    <div class="tab-pane fade show active" id="gdpr" role="tabpanel">
+                        <h4>GDPR</h4>
+                        <p>Data protection and privacy regulation for businesses operating in the EU.</p>
+                    </div>
+                    <div class="tab-pane fade" id="ccpa" role="tabpanel">
+                        <h4>CCPA</h4>
+                        <p>California Consumer Privacy Act - protecting consumer rights in California.</p>
+                    </div>
+                    <div class="tab-pane fade" id="hipaa" role="tabpanel">
+                        <h4>HIPAA</h4>
+                        <p>Health Insurance Portability and Accountability Act - protecting health information.</p>
+                    </div>
+                    <div class="tab-pane fade" id="pci" role="tabpanel">
+                        <h4>PCI-DSS</h4>
+                        <p>Payment Card Industry Data Security Standard - ensuring secure transactions.</p>
+                    </div>
+                    <div class="tab-pane fade" id="soc2" role="tabpanel">
+                        <h4>SOC 2</h4>
+                        <p>Service Organization Control 2 - managing customer data securely.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- tabs second part end here -->
+
+
+    <!-- ultron second part starts here -->
+    <section class="ultron">
+        <div class="container mt-5">
+            <div class="row">
+                
+                <div class="col-12 col-lg-5 left-content" id="sticky-info">
+                    <div class="stk">
+                        <h2 class="section-title">
+                            Delivering Hyper-Focused and Bespoke Business Software Built On Future-Forward Technologies
+                        </h2>
+                        <p>
+                            As a leading software product development services provider, our custom software solutions
+                            encompass more than mere coding.
+                            We excel in all facets of custom application development, ranging from concept ideation and
+                            product management to design, security testing, and compliance assurance.
+                        </p>
+                    </div>
+                </div>
+
+                
+                <div class="col-12 col-lg-7 right-content">
+                    <div class="content-box">
+                        <h4><span class="highlight"><img src="images/ai.svg"> Artificial Intelligence</span></h4>
+                        <p>An illustrious software development company in New York like ours leverages 
+                            <a href="#" class="text-decoration-none"> AI technology</a> in custom software solutions
+                            that enable intelligent automation,
+                            predictive analytics, and<a href="#" class="text-decoration-none"> natural language
+                                processing.</a> This enhances functionalities,
+                            decision-making, and user experiences, empowering businesses to optimize
+                            processes, gain valuable insights, and remain competitive in a digital environment.
+                        </p>
+                    </div>
+
+                    <div class="content-box">
+                        <h4><span class="highlight"><img src="images/iot.svg"> IoT</span></h4>
+                        <p>As a custom software development consulting firm, our experts possess technical
+                            knowledge in leveraging <a href="#" class="text-decoration-none">IoT technology </a>
+                            seamlessly integrate physical devices,
+                            sensors, and data streams with custom software solutions. This makes way for
+                            real-time monitoring, automation, and actionable insights.</p>
+                    </div>
+
+                    <div class="content-box">
+                        <h4><span class="highlight"><img src="images/metaverse.svg"> Metaverse</span></h4>
+                        <p>Being a leading custom software development solutions provider, we possess
+                            profound expertise in cutting-edge technologies like the <a href="#"
+                                class="text-decoration-none">Metaverse.</a> With our
+                            metaverse app development proficiency, we craft captivating virtual environments
+                            that set your business apart in a competitive market.</p>
+                    </div>
+
+                    <div class="content-box">
+                        <h4><span class="highlight"><img src="images/cloud-image.svg"> Cloud</span></h4>
+                        <p>Being a committed customized software development company, we harness the
+                            potential of<a href="#" class="text-decoration-none"> cloud technology</a> to deliver
+                            seamless and secure software applications.
+                            Leveraging <a href="#" class="text-decoration-none">advanced security measures,</a> the
+                            cloud enables swift and effortless app
+                            updates, facilitating a streamlined and efficient business approach.</p>
+                    </div>
+
+                    <div class="content-box">
+                        <h4><span class="highlight"><img src="images/data-analytics.svg"> Data Analytics</span></h4>
+                        <p>Our data science and analytics services unlock valuable insights from your business
+                            data and facilitate data-driven decision-making, optimized operations, and reduced
+                            risks. Being an esteemed customized software development company, we leverage
+                            advanced processing and data storage techniques to enhance user experiences,
+                            increase agility, and improve overall business performance.</p>
+                    </div>
+
+                    <div class="content-box">
+                        <h4><span class="highlight"><img src="images/machine-learning.svg"> Machine Learning</span></h4>
+                        <p>As a premier custom software development company, we leverage advanced
+                            machine learning technologies to unlock new possibilities for your business. Our
+                            deep understanding of data-driven analytics and <a href="#"
+                                class="text-decoration-none">machine learning development</a> 
+                            enables us to build intelligent ML models that optimize decision-making and provide
+                            actionable insights.</p>
+                    </div>
+
+                    <div class="content-box">
+                        <h4><span class="highlight"><img src="images/computer-vision.svg"> Computer Vision</span></h4>
+                        <p>As a top-tier provider of custom software solutions, we excel using<a href="#"
+                                class="text-decoration-none"> computer vision </a>
+                            capabilities. Our expertise in computer vision development enables us to create
+                            intelligent systems that enhance visual recognition, automate processes, and drive
+                            innovation for your business.</p>
+                    </div>
+
+                    <div class="content-box">
+                        <h4><span class="highlight"><img src="images/ai.svg"> AR/VR</span></h4>
+                        <p>With deep knowledge of<a href="#" class="text-decoration-none"> AR/VR technologies,</a> we
+                            design immersive experiences
+                            that revolutionize user interaction. Our AR/VR app development services empower
+                            your business to deliver engaging, real-world simulations that captivate your
+                            audience and elevate your brand in the digital space.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ultron second part end here -->
+
+
+
+
+
+    <section class="unicron">
+        <div class="container text-start py-5" id="track">
+            <h2 class="text-start mb-5">Delivering Robust Solutions As A Top-Tier Software <br>Development Service
+                Provider</h2>
+            <div class="row g-4 mt-3">
+                <div class="col-md-4">
+                    <div class="card" id="tri-img">
+                        <img src="images/enterprise-wide.webp" height="50px" ; width="50px">
+                        <h5>Enterprise-Wide Software</h5>
+                        <p>Being a dedicated customized software
+                            development company, we offer
+                            comprehensive enterprise-wide software
+                            and integrated solutions that function as a
+                            centralized repository for organizational
+                            data. Our custom solutions guarantee
+                            business resilience by providing valuable
+                            insights and facilitating the seamless
+                            process, and data flow across various
+                            departments. Examples of such software
+                            include<a href="#" class="text-primary"  >Enterprise Resource Planning (ERP) </a>
+                            and Supply Chain Management (SCM) <br>
+                            systems.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" id="tri-img">
+                        <img src="images/department-software.webp" height="50px" ; width="50px">
+                        <h5>Departmental Software</h5>
+                        <p>Our departmental software solutions are
+                            tailored to support and streamline the
+                            operations and processes of a specific
+                            department, enhancing efficiency and
+                            productivity. As a trusted software solution
+                            company, we develop robust Customer
+                            Relationship Management (CRM), Human
+                            Resources Information Systems (HRIS),
+                            Project Management Software,<a href="#" class="text-primary"> ERP
+                                Accounting Software,</a> Sales and Marketing
+                            Automation Software, and more to
+                            streamline your business processes.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" id="tri-img">
+                        <img src="images/buisness-process.webp" height="50px" ; width="50px">
+                        <h5>Business Process Management
+                            Software </h5>
+                        <p>As a renowned software development
+                            service provider, our business process
+                            management software solutions can
+                            provide support for business-specific
+                            and industry-specific workflows. Our
+                            development practices streamline and
+                            optimize various business processes,
+                            such as price management and clinical
+                            decision support, adhering to the unique
+                            requirements of different industrial domains.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="hound">
+        <div class="container text-start py-5" id="cs3">
+            <h2 class="text-start ">Know How We Collaborate For Your Custom <br>
+                Software Development Project </h2>
+            <p class="semi-head">Discover a seamless collaboration where we build robust, tailored solutions aligned
+                with your unique needs. Our software <br>services approach, whether through dedicated teams or strategic
+                augmentation, ensures a dynamic and efficient software <br>development process, optimizing resources for
+                project success.</p>
+            <div class="row g-4 mt-3">
+                <div class="col-md-4">
+                    <div class="card " id="tri">
+                        <h4>Software Development
+                            Outsourcing </h4>
+
+                        <p>As a leading<a href="#" class="text-primary"  > software development
+                                outsourcing services</a> provider, we seamlessly integrate our expertise into your
+                            vision and build intuitive solutions. Our dedicated team comprises seasoned professionals
+                            driven by
+                            a passion for innovation and a commitment to crafting scalable solutions.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card " id="tri">
+
+                        <h4>Dedicated Software Development
+                            Team </h4>
+                        <p>Bringing together an enthusiastic team with
+                            key competencies, we focus on handling
+                            specific tasks like coding, QA, and integration.
+                            As a dedicated software product development
+                            services provider, our highly<a href="#" class="text-primary"  > dedicated
+                                development team </a> committed to your
+                            project alone, guaranteeing an<a href="#" class="text-primary"  > accelerated
+                                development process.</a> </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card " id="tri">
+
+                        <h4>Team Augmentation</h4>
+                        <p>As a renowned software development
+                            service provider, our business process
+                            management software solutions can
+                            provide support for business-specific
+                            and industry-specific workflows. Our
+                            development practices streamline and
+                            optimize various business processes,
+                            such as price management and clinical
+                            decision support, adhering to the unique
+                            requirements of different industrial domains.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mega">
+        <div class="container text-white" id="new-ct">
+            <div class="row">
+                <h2 class="text-start">An Exhaustive Enterprise Custom Software <br>
+                    Development Process </h2>
+                <p class="semi-head">In the software development space, there is no 'one size that fits all' approach.
+                    We,
+                    being a trusted software <br>
+                    development agency, adopt a process that makes your product as unique as your idea. </p>
+            </div>
+            <div class="row">
+                <div class="new-slider-container">
+                    <div class="new-nav-arrows">
+                        <button onclick="newSlideLeft()">&#8592;</button>
+                        <button onclick="newSlideRight()">&#8594;</button>
+                    </div>
+                    <div class="new-card-slider" id="newCardSlider">
+                        <div class="card new-card-slide">
+                            <div class="card-body">
+                                <h6 class="card-title">Requirement Gathering</h6>
+                                <hr>
+                                <p class="card-text">Understanding the specific needs, goals, and functionalities
+                                    required
+                                    for designing your custom software.</p>
+                            </div>
+                        </div>
+
+                        <div class="card new-card-slide">
+                            <div class="card-body">
+                                <h6 class="card-title">Analysis and Planning</h6>
+                                <hr>
+                                <p class="card-text">Analyzing the project requirements, determining scope, and planning
+                                    the
+                                    development process.</p>
+                            </div>
+                        </div>
+
+                        <div class="card new-card-slide">
+                            <div class="card-body">
+                                <h6 class="card-title">New UI/UX Design</h6>
+                                <hr>
+                                <p class="card-text">Creating an intricate UI/UX design, including architecture,
+                                    database
+                                    structure, and user interface.</p>
+                            </div>
+                        </div>
+
+                        <div class="card new-card-slide">
+                            <div class="card-body">
+                                <h6 class="card-title">Development</h6>
+                                <hr>
+                                <p class="card-text">Writing clean, scalable, and efficient code to build the software.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card new-card-slide">
+                            <div class="card-body">
+                                <h6 class="card-title">Testing & QA</h6>
+                                <hr>
+                                <p class="card-text">Ensuring the software meets quality standards and is bug-free.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- three counter start here  -->
+
+
+
+
+
+
+        <div class="container mt-5">
+            <div class="counter-container row">
+                <h2 class="mb-4">Hiring our software development services comes with</h2>
+                <div class="col-md-4 counter-box">
+                    <div class="counter-number" id="counter1">0%</div>
+                    <hr>
+                    <p>Quality of service</p>
+                </div>
+                <div class="col-md-4 counter-box">
+                    <div class="counter-number" id="counter2">0%</div>
+                    <hr>
+                    <p>Time to market</p>
+                </div>
+                <div class="col-md-4 counter-box">
+                    <div class="counter-number" id="counter3">0%</div>
+                    <hr>
+                    <p>Overall costs</p>
+                </div>
+                <button class="contact-button">Contact Us</button>
+            </div>
+        </div>
+        <!-- three counter end here  -->
+
+        <!-- three slider start here  -->
+        <div class="container my-5">
+
+            <div class="slider-container">
+
+                <div class="card-slider" id="cardSlider">
+
+                    <div class="card card-slide">
+
+                        <div class="card-body">
+                            <a href="">01-04</a>
+                            <h6 class="card-title">DevOps</h6>
+
+                            <p class="card-text">
+                                DevOps is a collaborative approach that
+                                is meant to improve work throughout the
+                                software development lifecycle. Our offshoreand nearshore software developmentservice
+                                experts adopt the industry-best DevOps practices that help your business toachieve the
+                                desired transparency and real-time decision-making for all undergoing developments. </p>
+                        </div>
+                    </div>
+
+                    <div class="card card-slide">
+
+                        <div class="card-body">
+                            <a href="">02-04</a>
+                            <h6 class="card-title">Agile</h6>
+
+                            <p class="card-text">
+                                The agile methodology helps to manage a
+                                project by breaking it down into several
+                                phases. It involves constant collaboration
+                                and constant improvement at every stage.
+                                As one of the pioneering software developer
+                                companies, we are fully experienced with
+                                the best agile software development
+                                practices to ensure a top-notch quality
+                                product is delivered in less time. </p>
+                        </div>
+                    </div>
+
+                    <div class="card card-slide">
+
+                        <div class="card-body">
+                            <a href="">03-04</a>
+                            <h6 class="card-title">Scrum</h6>
+
+                            <p class="card-text">
+                                Scrum is an agile development methodology based on iterative processes. It is a quick,
+                                flexible, and adaptable agile framework that delivers value to your project throughout
+                                your custom business software development project. As a dedicated software development
+                                service provider, our scrum
+                                software development process ensures
+                                transparency in communication, collective responsibility, and collective progress for
+                                your project. </p>
+                        </div>
+                    </div>
+
+                    <div class="card card-slide">
+
+                        <div class="card-body">
+                            <a href="">01-04</a>
+                            <h6 class="card-title">DevOps</h6>
+
+                            <p class="card-text">
+
+                                DevOps is a collaborative approach that
+                                is meant to improve work throughout the
+                                software development lifecycle. Our offshoreand nearshore software developmentservice
+                                experts adopt the industry-best DevOps practices that help your business toachieve the
+                                desired transparency and real-time decision-making for all undergoing developments. </p>
+                        </div>
+                    </div>
+
+                    <div class="card card-slide">
+
+                        <div class="card-body">
+                            <a href="">01-04</a>
+                            <h6 class="card-title">Agile</h6>
+
+                            <p class="card-text">
+                                The agile methodology helps to manage a
+                                project by breaking it down into several
+                                phases. It involves constant collaboration
+                                and constant improvement at every stage.
+                                As one of the pioneering software developer
+                                companies, we are fully experienced with
+                                the best agile software development
+                                practices to ensure a top-notch quality
+                                product is delivered in less time. </p>
+                        </div>
+                    </div>
+
+                    <div class="card card-slide">
+
+                        <div class="card-body">
+                            <a href="">01-04</a>
+
+                            <h6 class="card-title">Scrum</h6>
+
+                            <p class="card-text">
+                                Scrum is an agile development methodology based on iterative processes. It is a quick,
+                                flexible, and adaptable agile framework that delivers value to your project throughout
+                                your custom business software development project. As a dedicated software development
+                                service provider, our scrum
+                                software development process ensures
+                                transparency in communication, collective responsibility, and collective progress for
+                                your project. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nav-arrows">
+                    <button onclick="slideLeft()">&#8592;</button>
+                    <button onclick="slideRight()">&#8594;</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="optimus">
+        <div class="container-fluid" id="advmain">
+            <div class="container" id="advhead">
+                <div class="header-section text-start">
+                    <h2>Fuelling Digital Excellence With The Latest Tech Stack</h2>
+                    <p>Software development services in the US will help
+                        your business bargain disruption and innovation.
+                        Our software engineers are abreast with all the
+                        latest technologies and, at the same time,
+                        well-versed in proven classic technologies. Here
+                        is the technology stack typically utilised for your
+                        custom software application development
+                        project:</p>
+                </div>
+            </div>
+            <div class="container " id="adv">
+                <div class="accordion" id="techAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#backend">
+                                <i class="fas fa-server"></i>Backend Programming Languages
+                            </button>
+                        </h2>
+                        <div id="backend" class="accordion-collapse collapse show" data-bs-parent="#techAccordion">
+                            <div class="accordion-body tech-category">
+                                <div class="tech-item">.NET</div>
+                                <div class="tech-item">Java</div>
+                                <div class="tech-item">Python</div>
+                                <div class="tech-item">PHP</div>
+                                <div class="tech-item">Node.js</div>
+                                <div class="tech-item">Go</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#frontend">
+                                <i class="fas fa-code"></i>Frontend Programming Languages
+                            </button>
+                        </h2>
+                        <div id="frontend" class="accordion-collapse collapse" data-bs-parent="#techAccordion">
+                            <div class="accordion-body tech-category">
+                                <div class="tech-item">React</div>
+                                <div class="tech-item">Angular</div>
+                                <div class="tech-item">Vue.js</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#mobile">
+                                <i class="fas fa-mobile-alt"></i> Mobile
+                            </button>
+                        </h2>
+                        <div id="mobile" class="accordion-collapse collapse" data-bs-parent="#techAccordion">
+                            <div class="accordion-body tech-category">
+                                <div class="tech-item">Swift</div>
+                                <div class="tech-item">Kotlin</div>
+                                <div class="tech-item">Flutter</div>
+                                <div class="tech-item">React Native</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#bigdata">
+                                <i class="fas fa-database"></i>Big Data
+                            </button>
+                        </h2>
+                        <div id="bigdata" class="accordion-collapse collapse" data-bs-parent="#techAccordion">
+                            <div class="accordion-body tech-category">
+                                <div class="tech-item">Hadoop</div>
+                                <div class="tech-item">Spark</div>
+                                <div class="tech-item">Kafka</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#databases">
+                                <i class="fas fa-hdd"></i> Databases / Data Storages
+                            </button>
+                        </h2>
+                        <div id="databases" class="accordion-collapse collapse" data-bs-parent="#techAccordion">
+                            <div class="accordion-body tech-category">
+                                <div class="tech-item">MySQL</div>
+                                <div class="tech-item">PostgreSQL</div>
+                                <div class="tech-item">MongoDB</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#CloudDatabasesWarehousesandStorage">
+                                <i class="fas fa-cloud"></i> Cloud Databases, Warehouses
+                                and Storage
+                            </button>
+                        </h2>
+                        <div id="CloudDatabasesWarehousesandStorage" class="accordion-collapse collapse"
+                            data-bs-parent="#techAccordion">
+                            <div class="accordion-body tech-category">
+                                <div class="tech-item">MySQL</div>
+                                <div class="tech-item">PostgreSQL</div>
+                                <div class="tech-item">MongoDB</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#DevOps">
+                                <i class="fas fa-cogs"></i> DevOps
+                            </button>
+                        </h2>
+                        <div id="DevOps" class="accordion-collapse collapse" data-bs-parent="#techAccordion">
+                            <div class="accordion-body tech-category">
+                                <div class="tech-item">MySQL</div>
+                                <div class="tech-item">PostgreSQL</div>
+                                <div class="tech-item">MongoDB</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#ArchitectureDesignsandPatterns">
+                                <i class="fa-brands fa-nfc-symbol" style="color: #ffffff;"></i> Architecture Designs and
+                                Patterns
+                            </button>
+                        </h2>
+                        <div id="ArchitectureDesignsandPatterns" class="accordion-collapse collapse"
+                            data-bs-parent="#techAccordion">
+                            <div class="accordion-body tech-category">
+                                <div class="tech-item">MySQL</div>
+                                <div class="tech-item">PostgreSQL</div>
+                                <div class="tech-item">MongoDB</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#Platforms">
+                                <i class="fa-solid fa-layer-group" style="color: #f5f7fa;"></i> Platforms
+                            </button>
+                        </h2>
+                        <div id="Platforms" class="accordion-collapse collapse" data-bs-parent="#techAccordion">
+                            <div class="accordion-body tech-category">
+                                <div class="tech-item">MySQL</div>
+                                <div class="tech-item">PostgreSQL</div>
+                                <div class="tech-item">MongoDB</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- footer up part starts here -->
+    <section class="footup">
+        <div class="advwrapper">
+            <div class="heading-container">
+                <h2>Fueling Digital Excellence With The Latest Tech Stack</h2>
+                <p>Software development services in the US will help your business bargain disruption and innovation.
+                    Our
+                    software engineers are
+                    abreast with all the latest technologies and, at the same time, well-versed in proven classic
+                    technologies. Here is the
+                    technology stack typically utilized for your custom software application development project: </p>
+            </div>
+            <div class="tabs-container">
+                <div class="nav-section">
+                    <ul class="nav nav-pills flex-column w-100" id="techTabs" role="tablist">
+                        <li class="nav-item w-100"><button class="nav-link active" data-bs-toggle="pill"
+                                data-bs-target="#backend1"><i class="fas fa-server"></i> Backend Programming
+                                Languages</button></li>
+                        <li class="nav-item w-100"><button class="nav-link" data-bs-toggle="pill"
+                                data-bs-target="#frontend1"><i class="fas fa-code"></i> Frontend Programming
+                                Languages</button></li>
+                        <li class="nav-item w-100"><button class="nav-link" data-bs-toggle="pill"
+                                data-bs-target="#mobile1"><i class="fas fa-mobile-alt"></i> Mobile</button></li>
+                        <li class="nav-item w-100"><button class="nav-link" data-bs-toggle="pill"
+                                data-bs-target="#bigdata1"><i class="fas fa-database"></i> Big Data</button></li>
+                        <li class="nav-item w-100"><button class="nav-link" data-bs-toggle="pill"
+                                data-bs-target="#databases1"><i class="fas fa-hdd"></i> Databases / Data
+                                Storages</button>
+                        </li>
+                        <li class="nav-item w-100"><button class="nav-link" data-bs-toggle="pill"
+                                data-bs-target="#cloud1">
+                                <i class="fas fa-cloud"></i> Cloud Databases, Warehouses and Storage</button></li>
+                    </ul>
+                </div>
+                <div class="content-section">
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="backend1">
+                            <div class="tech-list">
+                                <div class="tech-item">.NET</div>
+                                <div class="tech-item">Java</div>
+                                <div class="tech-item">Python</div>
+                                <div class="tech-item">PHP</div>
+                                <div class="tech-item">Node.js</div>
+                                <div class="tech-item">GO</div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="frontend1">
+                            <div class="tech-list">
+                                <div class="tech-item">React</div>
+                                <div class="tech-item">Angular</div>
+                                <div class="tech-item">Vue.js</div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="mobile1">
+                            <div class="tech-list">
+                                <div class="tech-item">Flutter</div>
+                                <div class="tech-item">React Native</div>
+                                <div class="tech-item">Swift</div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="bigdata1">
+                            <div class="tech-list">
+                                <div class="tech-item">Hadoop</div>
+                                <div class="tech-item">Spark</div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="databases1">
+                            <div class="tech-list">
+                                <div class="tech-item">MySQL</div>
+                                <div class="tech-item">PostgreSQL</div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="cloud1">
+                            <div class="tech-list">
+                                <div class="tech-item">AWS</div>
+                                <div class="tech-item">Azure</div>
+                                <div class="tech-item">Google Cloud</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer up part ends here -->
+
+
+    <!-- moadal from section start here -->
+    <section id="footdown">
+        <div class="container-fluid" id="modal_wrapper">
+            <div class="container custom-container">
+                <div class="row align-items-center">
+
+                    <div class="col-md-6">
+                        <h2 class="h-dot">Estimated Custom Software Development Cost</h2>
+                        <p>We take a comprehensive approach to providing accurate and transparent quotes for software
+                            development projects. Our team considers multiple factors when giving you the quotation for
+                            software
+                            development.</p>
+                        <ul>
+                            <li>The complexity of features and functionalities</li>
+                            <li>The intricacy of third-party integrations</li>
+                            <li>The project scope and size</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="col-md-6">
+
+                        <div class="form-container" id="ftform">
+
+                            <form class="nb-form">
+                                <div class="mb-4">
+                                    <input type="text" class="form-control" placeholder="Full Name">
+                                </div>
+                                <div class="mb-4">
+                                    <input type="email" class="form-control" placeholder="E-mail ID*">
+                                </div>
+                                <div class="mb-4">
+                                    <input type="text" class="form-control" placeholder="Contact Number">
+                                </div>
+                                <div class="mb-4">
+                                    <select class="form-select">
+                                        <option selected>Select a Budget Range</option>
+                                        <option value="1">$500 - $1000</option>
+                                        <option value="2">$1000 - $5000</option>
+                                        <option value="3">$5000 - $10,000</option>
+                                    </select>
+                                </div>
+                                <div class="mb-4">
+                                    <textarea class="form-control" placeholder="Project Description*"></textarea>
+                                </div>
+                                <div class="mb-4 form-check">
+                                    <input type="checkbox" class="form-check-input" id="nda">
+                                    <label class="form-check-label" for="nda">Include Copy of a Non-Disclosure
+                                        Agreement</label>
+                                </div>
+                                <div class="mb-4 d-flex align-items-center">
+                                    <p class="mb-0 me-2">5 + 5 =</p>
+                                    <input type="text" class="form-control" style="width: 50px;">
+                                </div>
+                                <button type="submit" id="request-btn" class="btn btn-primary">Request Proposal</button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- moadal from section end here -->
+
+        <!--  footer up-accordion part start here -->
+        <div class="container faq-container">
+            <h2 class="text-center w-100 mb-5">Frequently Asked Questions</h2>
+            <div class="row">
+                <div class="col-md-6 col-sm-12 d-flex justify-content-center">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    <h6>How much does it cost to develop custom
+                                        software? </h6>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                    demonstrate the <code>.accordion-flush</code> class. This is the first item's
+                                    accordion
+                                    body.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    <h6>How can I ensure the security and confidentiality
+                                        of my project? </h6>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                    demonstrate the <code>.accordion-flush</code> class. This is the second item's
+                                    accordion
+                                    body. Let's imagine this being filled with some actual content.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    <h6>How long does it take to build custom software? </h6>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                    demonstrate the <code>.accordion-flush</code> class. This is the third item's
+                                    accordion
+                                    body. Nothing more exciting happening here in terms of content, but just filling up
+                                    the
+                                    space to make it look, at least at first glance, a bit more representative of how
+                                    this
+                                    would look in a real-world application.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 d-flex justify-content-center">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapsefour" aria-expanded="false"
+                                    aria-controls="flush-collapsefour">
+                                    <h6>What type of custom software development
+                                        services do you deliver? </h6>
+                                </button>
+                            </h2>
+                            <div id="flush-collapsefour" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                    demonstrate the <code>.accordion-flush</code> class. This is the first item's
+                                    accordion
+                                    body.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapsefive" aria-expanded="false"
+                                    aria-controls="flush-collapsefive">
+                                    <h6>How can I choose the best offshore software
+                                        development service company in the US for my
+                                        business? </h6>
+                                </button>
+                            </h2>
+                            <div id="flush-collapsefive" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                    demonstrate the <code>.accordion-flush</code> class. This is the second item's
+                                    accordion
+                                    body. Let's imagine this being filled with some actual content.</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  footer up-accordion part end here -->
+
+        <!-- blog part start here -->
+        <div id="news" class="container section">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="section-head text-center"><strong>Related Blogs</strong></h2>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="news-post">
+                        <img src="images/blog_image_1.webp" width="100%" height="50%" alt="">
+                        <p class="pass">10 ways Software Development
+                            Consulting benefits your Business </p>
+                        <a href="" class="read-more">Read More<i class="fa-solid fa-angles-right"></i></a>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4 ">
+                    <div class="news-post">
+                        <img src="images/blog-image-2.webp" width="100%" height="50%" alt="">
+                        <p class="pass">The Comprehensive Guide to
+                            Software Product Development
+                            for Businesses</p>
+                        <a href="" class="read-more">Read More <i class="fa-solid fa-angles-right"></i></a>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4 ">
+                    <div class="news-post">
+                        <img src="images/blog-image-3.webp" width="100%" height="50%" alt="">
+                        <p class="pass">A Comprehensive Guide to
+                            Estimating Custom Software
+                            Development Costs </p>
+                        <a href="" class="read-more">Read More <i class="fa-solid fa-angles-right"></i></a>
+
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+
+        </div>
+        <!-- blog part start here -->
+
+
+        <!-- footer complited part strat here  -->
+        <footer class="footer">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-6 d-flex" id="Appin">
+                        <img src="images/appinventiv.webp" alt="Appinventiv Logo">
+
+                    </div>
+                    <div class="col-md-6 d-flex" id="ft-figur">
+                        <div class="cont">
+                            <img src="images/Clutch-Badge-Blue.webp" alt="">
+                            <p class="mt-2 ml-2">Most trusted Mobile App Consulting Company on Clutch</p>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-2 location">
+                        <img src="images/india_icon.webp" alt="India">
+                        <h5>INDIA</h5>
+                        <p>B-25, Sector 58, Noida-201301, Delhi - NCR, India</p>
+                    </div>
+                    <div class="col-md-2 location">
+                        <img src="images/usa_icon.webp" alt="USA">
+                        <h5>USA</h5>
+                        <p>79, Madison Ave Manhattan, NY 10001, USA</p>
+                    </div>
+                    <div class="col-md-2 location">
+                        <img src="images/australia_icon.webp" alt="Australia">
+                        <h5>Australia</h5>
+                        <p>Appinventiv Australia, East Brisbane, QLD 4169, Australia</p>
+                    </div>
+                    <div class="col-md-2 location">
+                        <img src="images/uk_icon.webp" alt="UK">
+                        <h5>UK</h5>
+                        <p>3rd Floor, 86-90 Paul Street EC2A 4NE London, UK</p>
+                    </div>
+                    <div class="col-md-2 location">
+                        <img src="images/uae_icon.webp" alt="UAE">
+                        <h5>UAE</h5>
+                        <p>Tiger Al Yarmook Building, 13th floor B-block Al Nahda St - Sharjah</p>
+                    </div>
+                    <div class="col-md-2 location">
+                        <img src="images/canada_icon.webp" alt="Canada">
+                        <h5>CANADA</h5>
+                        <p>Suite 3810, Bankers Hall West, 888 - 3rd Street SW Calgary Alberta</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Full-width container with dark purple background -->
+        <div class="fullwidth-container">
+            <!-- Centered inner container constrained to 1200px -->
+            <div class="inner-container">
+                <div class="row">
+                    <!-- Column 1 -->
+                    <div class="col-12 col-md-2">
+                        <ul class="custom-list">
+                            <li>
+                                <h4><strong>About</strong></h4>
+                            </li>
+                            <li>Our company</li>
+                            <li> Core Team</li>
+                            <li>Career</li>
+                            <li> CSR</li>
+                            <li> How We Work</li>
+
+                        </ul>
+                    </div>
+                    <!-- Column 2 -->
+                    <div class="col-12 col-md-2">
+                        <ul class="custom-list">
+                            <li>
+                                <h4><strong>Services</strong></h4>
+                            </li>
+
+                            <li>iOS App Development</li>
+                            <li> Android App Development</li>
+                            <li> Software Development</li>
+                            <li> Ideation & Design</li>
+                            <li> Mobile App Dev</li>
+                            <li>Research & Innovation</li>
+                            <li>Digital Transformation</li>
+                            <li> more...</li>
+                        </ul>
+                    </div>
+                    <!-- Column 3 -->
+                    <div class="col-12 col-md-2">
+                        <ul class="custom-list">
+
+                            <li>
+                                <h4><strong>Technologies</strong></h4>
+                            </li>
+                            <li> Blockchain</li>
+                            <li> Artificial Intelligence</li>
+                            <li> AR and VR</li>
+                            <li> Cloud Computing </li>
+                            <li>Internet of Things</li>
+                            <li> Metaverse Development</li>
+                            <li> NFT Development</li>
+                            <li> more...</li>
+
+                        </ul>
+                    </div>
+                    <!-- Column 4 -->
+                    <div class="col-12 col-md-2">
+                        <ul class="custom-list">
+                            <li>
+                                <h4><strong>Industries</strong></h4>
+                            </li>
+                            <li> Healthcare</li>
+                            <li> Education</li>
+                            <li> SaaS</li>
+                            <li> Finance</li>
+                            <li> On-Demand</li>
+                            <li> eCommerce</li>
+                            <li> Logistics</li>
+                            <li> more...</li>
+
+                        </ul>
+                    </div>
+                    <!-- Column 5 -->
+                    <div class="col-12 col-md-2">
+                        <ul class="custom-list">
+                            <li>
+                                <h4><strong>Portfolio</strong></h4>
+                            </li>
+                            <li> KFC</li>
+                            <li> Adidas</li>
+                            <li> IKEA</li>
+                            <li> Hukoomi</li>
+                            <li> Domino's</li>
+                            <li> Pizza Hut</li>
+                            <li> YouCOMM</li>
+                            <li> more...</li>
+                        </ul>
+                    </div>
+                    <!-- Column 6 -->
+                    <div class="col-12 col-md-2">
+                        <ul class="custom-list">
+                            <li>
+                                <h4><strong>Resources</strong></h4>
+                            </li>
+                            <li> Blog</li>
+                            <li> Press Release </li>
+                            <li>Guides</li>
+                            <li>Ebooks</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="under-footer">
+            <div class="container ">
+                <div class="row mb-3">
+                    <div class="col-md-6 col-lg-12 text-center d-flex">
+                        <img src="images/footer_bottom_logo.webp" alt="DMCA Protected">
+                        <p>Full stack mobile (iOS, Android) and web app <br>design and development agency</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row mt-4">
+                    <div class="col-md-4 text-center">
+                        <p>Statutory legal information</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <p>2024-2025 (c) Appinventiv | SiteMap | Privacy Policy</p>
+                    </div>
+                    <div class="col-md-4 text-center ">
+
+                        <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer full part end here  -->
+
+
+
+
+
+
+
+
+
+    <script>
+
+
+
+        let newSlider = document.getElementById('newCardSlider');
+        function newSlideLeft() {
+            newSlider.scrollBy({ left: -newSlider.offsetWidth / 3, behavior: 'smooth' });
+        }
+        function newSlideRight() {
+            newSlider.scrollBy({ left: newSlider.offsetWidth / 3, behavior: 'smooth' });
+        }
+
+
+
+
+        function animateCounter(id, start, end, duration) {
+            let obj = document.getElementById(id);
+            let range = end - start;
+            let current = start;
+            let increment = range / (duration / 10);
+            let stepTime = 10;
+            let timer = setInterval(function () {
+                current += increment;
+                obj.innerText = Math.round(current) + "%";
+                if (current >= end) {
+                    obj.innerText = end + "%";
+                    clearInterval(timer);
+                }
+            }, stepTime);
+        }
+        window.onload = function () {
+            animateCounter("counter1", 0, 95, 2000);
+            animateCounter("counter2", 0, 90, 2000);
+            animateCounter("counter3", 0, 80, 2000);
+        };
+
+
+        // <!-- three slider js start here  -->
+        const slider = document.getElementById('cardSlider');
+        function slideLeft() {
+            const slideWidth = slider.querySelector('.card-slide').offsetWidth;
+
+            slider.scrollBy({ left: -(slideWidth + 16), behavior: 'smooth' });
+        }
+        function slideRight() {
+            const slideWidth = slider.querySelector('.card-slide').offsetWidth;
+            slider.scrollBy({ left: slideWidth + 16, behavior: 'smooth' });
+        }
+        // <!-- three slider js end here  --
+
+
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const counters = document.querySelectorAll(".counter");
+            const speed = 200; // Animation speed
+
+            const startCounter = () => {
+                counters.forEach(counter => {
+                    const updateCount = () => {
+                        const target = +counter.getAttribute("data-target");
+                        const count = +counter.innerText;
+                        const increment = target / speed;
+                        if (count < target) {
+                            counter.innerText = Math.ceil(count + increment);
+                            setTimeout(updateCount, 10);
+                        } else {
+                            counter.innerText = target;
+                        }
+                    };
+                    updateCount();
+                });
+            };
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        startCounter();
+                        observer.disconnect();
+                    }
+                });
+            });
+
+            observer.observe(document.querySelector(".counter-section"));
+        });
+    </script>
+    <!-- counter end here -->
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3, /* Show exactly 3 images at a time */
+            spaceBetween: 10, /* Small gap */
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+            loop: true
+        });
+    </script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+
+</body>
+
+</html>
